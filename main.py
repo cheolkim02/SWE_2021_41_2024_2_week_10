@@ -1,4 +1,6 @@
 from typing import List
+
+
 # Skeleton code for even_list
 def even_list(int_list: List[int]) -> List[int]:
  """
@@ -9,7 +11,13 @@ def even_list(int_list: List[int]) -> List[int]:
  A list of even integers.
  """
  # TODO: Implement even_list
- pass
+evens = []
+for num in int_list:
+ if num % 2 == 0:
+  evens.append(num)
+return evens
+
+
 # Skeleton code for sum_of_squares_of_even
 def sum_of_squares_of_even(even_int_list: List[int]) -> int:
  """
@@ -22,6 +30,8 @@ Assignment 3
  """
  # TODO: Implement sum_of_squares_of_even
  pass
+
+
 # Main function
 def main():
  # Example list
